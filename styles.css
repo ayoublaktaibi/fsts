@@ -996,6 +996,12 @@ blockquote footer {
         padding: 10px;
     }
 
+    .announcement:hover {
+        box-shadow: none;
+        transform: scale(0.95);
+        opacity: 0.6;
+    }
+
     .announcement:first-child {
         border-top: 4px solid rgb(230, 230, 230);
         padding-top: 20px;
@@ -1009,21 +1015,21 @@ blockquote footer {
 
     .announcement-img {
         margin-top: 20px;
-        height: 80px;
+        height: 100px;
         margin-right: 10px;
         width: 80px;
         padding-bottom: 30px;
     }
 
     .announcement-description {
-        font-size: 12px;
+        font-size: 14px;
         margin-right: 10px;
     }
 
     .announcement-date {
         padding-bottom: 5px;
         bottom: 10px;
-        font-size: 12px;
+        font-size: 13px;
     }
 
     /* Ajustements pour les sections */
