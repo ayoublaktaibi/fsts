@@ -5,15 +5,15 @@
 
 <main>
     <div class="logo-container">
-        <img src="http://www.fsts.ac.ma/wp-content/uploads/2017/07/fsts_logo.png" alt="Logo gauche" id="left-logo">
+        <img src="fsts_logo.png" alt="Logo gauche" id="left-logo">
         <h1>Les derniéres actualités</h1>
-        <img src="http://www.fsts.ac.ma/wp-content/uploads/2017/07/uh1_logo.png" alt="Logo droit" id="right-logo">
+        <img src="uh1_logo.png" alt="Logo droit" id="right-logo">
     </div>
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="image-container">
-                    <img src="actusphoto/image1.jpg" alt="Image 1" class="swiper-image">
+                    <img src="image1.jpg" alt="Image 1" class="swiper-image">
                     <div class="centered-text">
                         <p>Masters et FI</p>
                         <p>Dérogations, les inscriptions en modules<br>et en projets de fins d’études</p>
@@ -23,7 +23,7 @@
             </div>
             <div class="swiper-slide">
                 <div class="image-container">
-                    <img src="actusphoto/image2.jpg" alt="Image 2" class="swiper-image">
+                    <img src="image2.jpg" alt="Image 2" class="swiper-image">
                     <div class="centered-text">
                         <p>IMPORTANT ! !</p>
                         <p>Emplois de temps disponible pour toutes<br>les filiéres</p>
@@ -33,7 +33,7 @@
             </div>
             <div class="swiper-slide">
                 <div class="image-container">
-                    <img src="actusphoto/image3.jpg" alt="Image 2" class="swiper-image">
+                    <img src="image3.jpg" alt="Image 2" class="swiper-image">
                     <div class="centered-text">
                         <p>Réserve 2023/2024</p>
                         <p>Ré-inscription aux modules pour les<br>parcours et LST</p>
@@ -42,7 +42,7 @@
                 <button class="details-button">Voir les détails</button>
             </div>
             <div class="swiper-slide">
-                <img src="actusphoto/image4.jpg" alt="Image 2" class="swiper-image">
+                <img src="image4.jpg" alt="Image 2" class="swiper-image">
             </div>
         </div>
         <div class="swiper-button-next"></div>
@@ -57,7 +57,7 @@
         <div class="announcement">
             <h3 class="announcement-title">Avis aux étudiants des masters et des filières d’ingénieurs</h3>
             <div class="announcement-details">
-                <img src="annoncesphoto/annonce1.jpg" class="announcement-img">
+                <img src="annonce1.jpg" class="announcement-img">
                 <p class="announcement-description">Il est porté à la connaissance des étudiants des masters et des filières d’ingénieurs que les dérogations, les inscriptions en modules et en projets de fins d’études, sont ouvertes jusqu’au 8 octobre 2023 délais de rigueur</p>
             </div>
             <div class="announcement-date">
@@ -69,7 +69,7 @@
         <div class="announcement">
             <h3 class="announcement-title">Emploi du temps 2023/2024</h3>
             <div class="announcement-details">
-                <img src="annoncesphoto/annonce2.jpg" class="announcement-img">
+                <img src="annonce2.jpg" class="announcement-img">
                 <p class="announcement-description">Il est porté à la connaissance des étudiants que les emplois du temps sont disponibles dans le lien ci–dessous : DEUST ET LST Documents pour les étudiants en Parcours-LST MST /FI  Documents pour les étudiants en MSTs et FI</p>
             </div>
             <div class="announcement-date">
@@ -81,7 +81,7 @@
         <div class="announcement">
             <h3 class="announcement-title">Ré-inscription aux modules pour les étudiants inscrits en année et semestre de réserve des troncs communs et LST</h3>
             <div class="announcement-details">
-                <img src="annoncesphoto/importantimage.jpg" class="announcement-img">
+                <img src="importantimage.jpg" class="announcement-img">
                 <p class="announcement-description">Veuillez consulter l’annonce ci-dessous, ainsi que la liste des modules dispensés aux parcours en fonction des semestres.<br>NB :Les étudiants ne doivent pas  dépasser  six modules par période d’automne et et six modules période de printemps.</p>
             </div>
             <div class="announcement-date">
@@ -93,7 +93,7 @@
         <div class="announcement">
             <h3 class="announcement-title">Important !!</h3>
             <div class="announcement-details">
-                <img src="annoncesphoto/annonce4.jpg" class="announcement-img">
+                <img src="annonce4.jpg" class="announcement-img">
                 <p class="announcement-description">Les résultats de traitement des demandes de réorientation en filières LST :   LST_Réorientation_Réponse</p>
             </div>
             <div class="announcement-date">
@@ -105,7 +105,7 @@
         <div class="announcement">
             <h3 class="announcement-title">Important! Début des enseignements pour l’année universitaire 2023-2024(MIP, BCG et GEGM)</h3>
             <div class="announcement-details">
-                <img src="annoncesphoto/annonce5.jpg" class="announcement-img">
+                <img src="annonce5.jpg" class="announcement-img">
                 <p class="announcement-description">Date du début des enseignements des enseignements des semestres 1 et 2 des parcours MIP, BCG et GEGM : IL est porté à la connaissance des étudiants inscrits en 1ere année des parcours MIP, BCG et GEGM, que les enseignements des semestres 1</p>
             </div>
             <div class="announcement-date">
@@ -117,7 +117,7 @@
         <div class="announcement">
             <h3 class="announcement-title">Début des enseignements pour l’année universitaire 2023-2024</h3>
             <div class="announcement-details">
-                <img src="annoncesphoto/importantimage.jpg" class="announcement-img">
+                <img src="importantimage.jpg" class="announcement-img">
                 <p class="announcement-description">Le doyen de la FST de Settat souhaite la bienvenue à l’ensemble des étudiants et une nouvelle année universitaire 2023-2024 pleine de réussite. Il avise les étudiants que le début des enseignements aura lieu selon le calendrier suivant :</p>
             </div>
             <div class="announcement-date">
@@ -132,7 +132,7 @@
             <h2>Mot du Doyen</h2>
             <div class="dean-photo-container">
             <a href="mot_du_doyen.php" class="dean-photo-link">
-                <img src="photos/Doyen.jpg" alt="Image du Doyen">
+                <img src="Doyen.jpg" alt="Image du Doyen">
             </a>
             </div>
             <p>La participation de tous les acteurs de la société à la dynamique de développement que connait aujourd’hui notre pays est à tous égards, incontestable. Néanmoins, face aux différents changements,que connaît le monde actuellement, sur tous les plans socio-économique, scientifique, technique...</p>
