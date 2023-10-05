@@ -2,7 +2,7 @@
     <section class="blue-section">
         <!-- Première partie -->
             <div class="part part-1">
-            <img src="http://www.fsts.ac.ma/wp-content/uploads/2017/07/fsts_logo.png" alt="Logo FST" class="fst-logo" style="filter: invert(1) brightness(2);">
+            <img src="fsts_logo.png" alt="Logo FST" class="fst-logo" style="filter: invert(1) brightness(2);">
                 <p>Faculté des sciences et techniques Settat</p>
                 <p>Cet établissement est destiné à s’intégrer dans le pôle technologique et industriel des villes de Casablanca, Settat et Berrechid ,pour être, une pépiniére de techniciens et de cadres de haut niveau</p>
         <!-- Deuxième partie -->
