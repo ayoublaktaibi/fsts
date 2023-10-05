@@ -1,0 +1,193 @@
+
+<?php include 'head.php'; ?>
+
+<?php include 'header.php'; ?>
+
+<main>
+    <div class="logo-container">
+        <img src="http://www.fsts.ac.ma/wp-content/uploads/2017/07/fsts_logo.png" alt="Logo gauche" id="left-logo">
+        <h1>Les derniéres actualités</h1>
+        <img src="http://www.fsts.ac.ma/wp-content/uploads/2017/07/uh1_logo.png" alt="Logo droit" id="right-logo">
+    </div>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="image-container">
+                    <img src="actusphoto/image1.jpg" alt="Image 1" class="swiper-image">
+                    <div class="centered-text">
+                        <p>Masters et FI</p>
+                        <p>Dérogations, les inscriptions en modules<br>et en projets de fins d’études</p>
+                    </div>
+                </div>
+                <button class="details-button">Voir les détails</button>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-container">
+                    <img src="actusphoto/image2.jpg" alt="Image 2" class="swiper-image">
+                    <div class="centered-text">
+                        <p>IMPORTANT ! !</p>
+                        <p>Emplois de temps disponible pour toutes<br>les filiéres</p>
+                    </div>
+                </div>
+                <button class="details-button">Voir les détails</button>
+            </div>
+            <div class="swiper-slide">
+                <div class="image-container">
+                    <img src="actusphoto/image3.jpg" alt="Image 2" class="swiper-image">
+                    <div class="centered-text">
+                        <p>Réserve 2023/2024</p>
+                        <p>Ré-inscription aux modules pour les<br>parcours et LST</p>
+                    </div>
+                </div>
+                <button class="details-button">Voir les détails</button>
+            </div>
+            <div class="swiper-slide">
+                <img src="actusphoto/image4.jpg" alt="Image 2" class="swiper-image">
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div class="button-container">
+        <button class="event-button">Voir tous les événements</button>
+        <button class="thesis-button">Soutenances de thèses</button>
+    </div>
+    <p class="announcement-text">Annonces</p>
+    <div class="announcements-section">
+        <div class="announcement">
+            <h3 class="announcement-title">Avis aux étudiants des masters et des filières d’ingénieurs</h3>
+            <div class="announcement-details">
+                <img src="annoncesphoto/annonce1.jpg" class="announcement-img">
+                <p class="announcement-description">Il est porté à la connaissance des étudiants des masters et des filières d’ingénieurs que les dérogations, les inscriptions en modules et en projets de fins d’études, sont ouvertes jusqu’au 8 octobre 2023 délais de rigueur</p>
+            </div>
+            <div class="announcement-date">
+                <i class="far fa-calendar-alt"></i>
+                <span>2 octobre 2023</span>
+            </div>
+            <button class="read-more-btn">Lire plus</button>
+        </div>
+        <div class="announcement">
+            <h3 class="announcement-title">Emploi du temps 2023/2024</h3>
+            <div class="announcement-details">
+                <img src="annoncesphoto/annonce2.jpg" class="announcement-img">
+                <p class="announcement-description">Il est porté à la connaissance des étudiants que les emplois du temps sont disponibles dans le lien ci–dessous : DEUST ET LST Documents pour les étudiants en Parcours-LST MST /FI  Documents pour les étudiants en MSTs et FI</p>
+            </div>
+            <div class="announcement-date">
+                <i class="far fa-calendar-alt"></i>
+                <span>29 septembre 2023</span>
+            </div>
+            <button class="read-more-btn">Lire plus</button>
+        </div>
+        <div class="announcement">
+            <h3 class="announcement-title">Ré-inscription aux modules pour les étudiants inscrits en année et semestre de réserve des troncs communs et LST</h3>
+            <div class="announcement-details">
+                <img src="annoncesphoto/importantimage.jpg" class="announcement-img">
+                <p class="announcement-description">Veuillez consulter l’annonce ci-dessous, ainsi que la liste des modules dispensés aux parcours en fonction des semestres.<br>NB :Les étudiants ne doivent pas  dépasser  six modules par période d’automne et et six modules période de printemps.</p>
+            </div>
+            <div class="announcement-date">
+                <i class="far fa-calendar-alt"></i>
+                <span>26 septembre 2023</span>
+            </div>
+            <button class="read-more-btn">Lire plus</button>
+        </div>
+        <div class="announcement">
+            <h3 class="announcement-title">Important !!</h3>
+            <div class="announcement-details">
+                <img src="annoncesphoto/annonce4.jpg" class="announcement-img">
+                <p class="announcement-description">Les résultats de traitement des demandes de réorientation en filières LST :   LST_Réorientation_Réponse</p>
+            </div>
+            <div class="announcement-date">
+                <i class="far fa-calendar-alt"></i>
+                <span>26 septembre 2023</span>
+            </div>
+            <button class="read-more-btn">Lire plus</button>
+        </div>
+        <div class="announcement">
+            <h3 class="announcement-title">Important! Début des enseignements pour l’année universitaire 2023-2024(MIP, BCG et GEGM)</h3>
+            <div class="announcement-details">
+                <img src="annoncesphoto/annonce5.jpg" class="announcement-img">
+                <p class="announcement-description">Date du début des enseignements des enseignements des semestres 1 et 2 des parcours MIP, BCG et GEGM : IL est porté à la connaissance des étudiants inscrits en 1ere année des parcours MIP, BCG et GEGM, que les enseignements des semestres 1</p>
+            </div>
+            <div class="announcement-date">
+                <i class="far fa-calendar-alt"></i>
+                <span>22 septembre 2023</span>
+            </div>
+            <button class="read-more-btn">Lire plus</button>
+        </div>
+        <div class="announcement">
+            <h3 class="announcement-title">Début des enseignements pour l’année universitaire 2023-2024</h3>
+            <div class="announcement-details">
+                <img src="annoncesphoto/importantimage.jpg" class="announcement-img">
+                <p class="announcement-description">Le doyen de la FST de Settat souhaite la bienvenue à l’ensemble des étudiants et une nouvelle année universitaire 2023-2024 pleine de réussite. Il avise les étudiants que le début des enseignements aura lieu selon le calendrier suivant :</p>
+            </div>
+            <div class="announcement-date">
+                <i class="far fa-calendar-alt"></i>
+                <span>18 septembre 2023</span>
+            </div>
+            <button class="read-more-btn">Lire plus</button>
+        </div>
+    </div>
+    <div class="sections-container">
+        <div class="dean-section">
+            <h2>Mot du Doyen</h2>
+            <div class="dean-photo-container">
+            <a href="mot_du_doyen.php" class="dean-photo-link">
+                <img src="photos/Doyen.jpg" alt="Image du Doyen">
+            </a>
+            </div>
+            <p>La participation de tous les acteurs de la société à la dynamique de développement que connait aujourd’hui notre pays est à tous égards, incontestable. Néanmoins, face aux différents changements,que connaît le monde actuellement, sur tous les plans socio-économique, scientifique, technique...</p>
+        </div>
+        <div class="testimony-section">
+            <h2>Témoignage</h2>
+            <blockquote>
+                "Dans l'ère de la technologie numérique et de la digitalisation de la formation. La FSTS lance son nouveau site web. Ce portail est conçu pour vous rapprocher de votre institution, ses composantes, l'organisation des études, les formations dispensées, et les diplômes délivrés. Le site présente de nombreuses nouveautés et offre aux visiteurs notamment les étudiants une expérience améliorée grâce à une navigation simplifiée et une utilisation intuitive."
+                <footer>Pr Jamal Naja Doyen de la Faculté des Sciences et Techniques.</footer>
+            </blockquote>
+        </div>
+    </div>
+    <div class="stats-section">
+        <p class="stats-title">FSTs en chiffres</p>
+        <p class="stats-description">Etudier à la FSTS. C'est allier savoir, idées et valeurs.</p>
+        <div class="stats-icons-container">
+            <div class="stat-item">
+                <i class="fas fa-user-graduate fa-3x"></i>
+                <p class="stat-number" id="counter1">4396</p>
+                <p class="stat-label">Êtudiants</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-award fa-3x"></i>
+                <p class="stat-number" id="counter2">1020</p>
+                <p class="stat-label">Lauréats</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-building fa-3x"></i>
+                <p class="stat-number" id="counter3">7</p>
+                <p class="stat-label">Départements</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-chalkboard-teacher fa-3x"></i>
+                <p class="stat-number" id="counter4">164</p>
+                <p class="stat-label">Enseignants</p>
+            </div>
+        </div>
+    </div>
+    <section class="text-section">
+        <div class="text-block">
+            <p>Formation initiale</p>
+            <p>Les Facultés des Sciences et Techniques adoptent une architecture pédagogique qui s’inscrit dans le système LMD…</p>
+            <button>Lire plus</button>
+        </div>
+        <div class="text-block">
+            <p>Formation continue</p>
+            <p>La formation continue est organisée pour être d’une part, au service de toute personne désirant acquérir ou développer…</p>
+            <button>Lire plus</button>
+        </div>
+        <div class="text-block">
+            <p>Recherche Scientifique</p>
+            <p>Le cycle de doctorat est organisé au sein du Centre d’Etudes Doctorales qui abrite 6 établissements…</p>
+            <button>Lire plus</button>
+        </div>
+    </section>
+</main>
+
+<?php include 'footer.php'; ?>
