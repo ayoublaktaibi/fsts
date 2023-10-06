@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(fstsettat.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+.wrapper {
+    width: 30%;
+    background: #fff;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #04437c;
+    border-radius: 15px;
+    padding: 30px 40px;
+    opacity: 0.8;
+}
+
+.wrapper img {
+    display: block;
+    margin: 15px auto;
+    height: 70px;
+}
+
+.wrapper h1 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: rgb(233, 233, 233);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 14px;
+    color: #04437c;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input:focus {
+    border: 1px solid #04427cb1;
+}
+
+.input-box input::placeholder {
+    color: #04437c;
+    transition: 0.5s;
+}
+
+.input-box input:focus::placeholder {
+    color: transparent;
+    opacity: 0;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin: -10px 0 15px;
+    opacity: 0.7;
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+}
+
+.remember-forgot label input {
+    accent-color: #04437c;
+    margin-right: 3px;
+    vertical-align: middle;
+    margin-top: 0;
+}
+
+.remember-forgot a {
+    color: #04437c;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .botton {
+    width: 100%;
+    height: 40px;
+    background: #eda60a;;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px solid rgba(0, 0, 0, .3);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.wrapper .botton:hover {
+    background: #04437c;
+    transform: scale(0.95);
+}
+
+.wrapper .signal {
+    text-align: center;
+    margin: 20px 0 15px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.signal p a {
+    color: #04437c;
+    text-decoration: none;
+}
+
+.signal p a:hover {
+    text-decoration: underline;
+}
+
+
+/* Styles pour les écrans de téléphone mobile */
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 90%; /* Augmenter la largeur pour les mobiles */
+        padding: 20px;
+    }
+
+    .wrapper h1 {
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    .wrapper img {
+        height: 70px; /* Réduire la taille de l'image */
+    }
+
+    .input-box {
+        margin: 15px 0; /* Réduire la marge */
+    }
+
+    .input-box input {
+        font-size: 15px; /* Réduire la taille de la police */
+        padding: 15px 35px 15px 15px; /* Réduire le padding */
+    }
+
+    .input-box i {
+        font-size: 16px; /* Réduire la taille de l'icône */
+    }
+
+    .remember-forgot {
+        font-size: 13px; /* Réduire la taille de la police */
+    }
+
+    .botton {
+        height: 40px; /* Réduire la hauteur du bouton */
+        font-size: 14px; /* Réduire la taille de la police */
+    }
+
+    .signal {
+        font-size: 13px; /* Réduire la taille de la police */
+    }
+}
