@@ -330,10 +330,11 @@ nav a {
 }
 
 .announcement-details {
-    display: flex;
+    padding-bottom: 35px;
 }
 
 .announcement-img {
+    float: none;
     margin-top: 20px;
     height: 140px;
     margin-right: 20px;
@@ -341,11 +342,10 @@ nav a {
 }
 
 .announcement-description {
-    flex-grow: 1;
+    text-align: left;
     font-size: 16px;
     line-height: 1.5;
     margin-right: 20px;
-    padding-bottom: 30px;
 }
 
 .announcement-date {
@@ -900,6 +900,7 @@ blockquote footer {
     }    
     
     .nav-links-mobile .nav-item {
+        position: relative;
         margin-left: 20px;
         font-size: 16px;
     }
@@ -912,8 +913,54 @@ blockquote footer {
         text-decoration: none;
         padding: 7px 10px;
         color: #000;
-        background: rgb(245, 245, 245);
+        background: rgb(220, 220, 220);
         border-radius: 15px;
+    }
+
+    .nav-links-mobile .dropdown_mobile {
+        display: none; /* cacher le dropdown par défaut */
+        position: absolute;
+        margin-top: 18px; /* positionnez le dropdown juste en dessous de l'élément parent */
+        will-change: left;
+        background-color: rgb(220, 220, 220);
+        border-radius: 10px;
+        overflow: visible;
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2); /* ombre optionnelle pour le dropdown */
+        z-index: 2; /* assurez-vous que le dropdown s'affiche au-dessus des autres éléments */
+    }
+    
+    .nav-links-mobile .dropdown_mobile a {
+        text-decoration: none;
+        color: #000;
+        padding: 7px 10px;
+        display: block;
+    }
+    
+    .nav-links-mobile .nav-item:hover .dropdown_mobile {
+        display: block; /* montre le dropdown lorsque vous survolez l'élément parent */
+    }
+    
+    /* Triangle */
+    .nav-links-mobile .dropdown_mobile::before {
+        content: "";
+        position: absolute;
+        top: -8px; /* Ajustez si nécessaire pour positionner le triangle */
+        left: 20px; /* Pour le centrer. Ajustez selon la nécessité */
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid rgb(220, 220, 220); /* Même couleur que le fond de dropdown */
+        z-index: 2; /* Assurez-vous que le triangle est au-dessus */
+    }
+
+    /* Dropdown Mobile en position fixed lors du survol */
+    .nav-links-mobile .nav-item:hover .dropdown_mobile {
+        position: fixed;
+        left: auto; /* Reset the left position */
+        top: auto; /* Reset the top position */
+        z-index: 1000; /* Une grande valeur pour s'assurer qu'il est au-dessus des autres éléments */
+        width: max-content; /* Pour ajuster la largeur du contenu */
     }
 
     .logo-container {
@@ -989,7 +1036,7 @@ blockquote footer {
     
     .announcement {
         box-shadow: none;
-        border-bottom: 4px solid rgb(230, 230, 230);
+        border-bottom: 5px solid rgb(230, 230, 230);
         margin-bottom: 10px;
         margin-left: 5px;
         margin-right: 5px;
@@ -999,37 +1046,39 @@ blockquote footer {
     .announcement:hover {
         box-shadow: none;
         transform: scale(0.95);
-        opacity: 0.6;
     }
 
     .announcement:first-child {
-        border-top: 4px solid rgb(230, 230, 230);
+        border-top: 4px solid rgb(220, 220, 220);
         padding-top: 20px;
     }
 
     .announcement-title {
-        font-size: 18px;
-        margin-bottom: 10px;
+        font-size: 20px;
+        margin-bottom: 12px;
         margin-top: 0;
     }
 
     .announcement-img {
-        margin-top: 20px;
-        height: 130px;
+        float: left;
+        height: 90px;
+        width: 90px;
         margin-right: 10px;
-        width: 80px;
-        padding-bottom: 30px;
+        margin-bottom: 5px;
+        margin-top: 7px;
     }
 
     .announcement-description {
         font-size: 14px;
-        margin-right: 10px;
+        margin-right: 8px;
+        text-align: left;
     }
 
     .announcement-date {
         padding-bottom: 5px;
         bottom: 10px;
         font-size: 13px;
+        right: 12px;
     }
 
     /* Ajustements pour les sections */
@@ -1143,7 +1192,7 @@ blockquote footer {
     }
 
     .blue-section {
-        padding: 15px 12px; /* Modification pour correspondre à votre demande d'espacement de 20px des côtés */
+        padding: 15px 10px; /* Modification pour correspondre à votre demande d'espacement de 20px des côtés */
         display: inline-block;
         justify-content: none;
         flex-wrap: none;
@@ -1155,15 +1204,15 @@ blockquote footer {
 
     .part p:nth-of-type(2) {
         margin-right: 10px;
-        font-size: 12.5px;
-        text-align: justify;
+        font-size: 13px;
+        text-align: left;
     }
     
     .fst-logo {
-        max-width: 85px; 
+        max-width: 90px; 
         float: left;
         margin-right: 3px;
-        margin-top: 10px;
+        margin-top: 5px;
     }
     
     .part-1, .part-2 {
@@ -1187,14 +1236,15 @@ blockquote footer {
     
     .part p:nth-of-type(3) {
         font-size: 20px;
-        margin-bottom: 8px;
+        margin-bottom: 6px;
+        margin-top: 20px;
     }
     
     .info-block {
         border-bottom: 1px solid white;
         padding: 6px 0;
         width: 98%;
-        font-size: 12px;
+        font-size: 12.7px;
     }
     
     .social-media {
