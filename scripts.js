@@ -73,8 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Navigation dropdown logic
     let navItems = document.querySelectorAll('.nav-links-mobile .nav-item');
+    let clickTimer; // pour stocker le timer
 
-    // Ajustement de la position du dropdown
     function updateDropdownPosition(navItem) {
         let dropdown = navItem.querySelector('.dropdown_mobile');
         if (dropdown) {
@@ -87,24 +87,32 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     navItems.forEach(function(navItem) {
-        navItem.addEventListener('mouseover', function() {
-            updateDropdownPosition(navItem);
-        });
-
-        navItem.querySelector('a').addEventListener('click', function(event) {
-            updateDropdownPosition(navItem); // Update dropdown position on click as well
-            let dropdown = navItem.querySelector('.dropdown_mobile');
-            if (dropdown) {
-                if (dropdown.style.display === 'block') {
-                    dropdown.style.display = 'none';
-                } else {
-                    // Close any other open dropdowns
-                    document.querySelectorAll('.nav-links-mobile .dropdown_mobile').forEach(function(d) {
-                        d.style.display = 'none';
-                    });
-                    dropdown.style.display = 'block';
-                }
-                event.preventDefault();
+        let mainLink = navItem.querySelector('a');
+        
+        mainLink.addEventListener('click', function(event) {
+            event.preventDefault(); // empêche la navigation
+            
+            if (clickTimer) {
+                // Si le timer est actif, cela signifie qu'il s'agit d'un double clic
+                clearTimeout(clickTimer); // clear le timer
+                window.location.href = mainLink.getAttribute('href'); // Naviguer vers le lien
+            } else {
+                clickTimer = setTimeout(function() {
+                    updateDropdownPosition(navItem); // Mettre à jour la position du dropdown
+                    let dropdown = navItem.querySelector('.dropdown_mobile');
+                    if (dropdown) {
+                        if (dropdown.style.display === 'block') {
+                            dropdown.style.display = 'none';
+                        } else {
+                            // Fermer les autres dropdowns
+                            document.querySelectorAll('.nav-links-mobile .dropdown_mobile').forEach(function(d) {
+                                d.style.display = 'none';
+                            });
+                            dropdown.style.display = 'block';
+                        }
+                    }
+                    clickTimer = null; // Réinitialiser le timer
+                }, 250); // Durée d'attente avant de décider s'il s'agit d'un simple clic ou d'un double clic
             }
         });
     });
@@ -116,6 +124,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     window.addEventListener('scroll', hideDropdowns);
-
     document.querySelector('.nav-links-mobile').addEventListener('scroll', hideDropdowns);
 });
