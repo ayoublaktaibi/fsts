@@ -110,7 +110,7 @@ nav a {
     align-items: center;
     background-color: white;
     border: 2px solid white;
-    border-radius: 5px;
+    border-radius: 15px;
     display: flex;
     flex-grow: 0;
     margin-left: auto;
@@ -131,6 +131,7 @@ nav a {
     background: #eda60a;;
     border: none;
     cursor: pointer;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     padding: 5px;
