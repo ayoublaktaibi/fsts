@@ -942,11 +942,11 @@ blockquote footer {
 
     .announcement-img {
         float: left;
-        height: 90px;
-        width: 90px;
+        height: 95px;
+        width: 95px;
         margin-right: 10px;
         margin-bottom: 5px;
-        margin-top: 7px;
+        margin-top: 5px;
     }
 
     .announcement-description {
