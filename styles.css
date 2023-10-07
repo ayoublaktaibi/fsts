@@ -570,6 +570,7 @@ blockquote footer {
 
 .info-block a {
     text-decoration: none;
+    color: white;
 }
 
 .social-media {
@@ -934,7 +935,7 @@ blockquote footer {
     }
 
     .announcement-title {
-        font-size: 20px;
+        font-size: 21px;
         margin-bottom: 12px;
         margin-top: 0;
     }
@@ -949,7 +950,7 @@ blockquote footer {
     }
 
     .announcement-description {
-        font-size: 14px;
+        font-size: 15px;
         margin-right: 8px;
         text-align: left;
     }
@@ -964,8 +965,8 @@ blockquote footer {
     /* Ajustements pour les sections */
     .sections-container {
         display: inline-block;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 12px;
+        margin-right: 12px;
     }
     
     .dean-section, .testimony-section {
@@ -992,7 +993,7 @@ blockquote footer {
     }
     
     .dean-section img {
-        margin-bottom: 5px;
+        margin-bottom: 7px;
     }
     
     blockquote {
@@ -1208,11 +1209,12 @@ blockquote footer {
 
     .right-column.a_propos-style p:nth-of-type(1) {
         margin-top: 10px;
-        font-size: 22px;
+        font-size: 22.5px;
     }
 
     .right-column.a_propos-style p {
         font-size: 15px;
+        margin-top: 20px
     }
 
     .right-column.a_propos-style img {
