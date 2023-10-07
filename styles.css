@@ -568,6 +568,10 @@ blockquote footer {
     font-size: 14px;
 }
 
+.info-block a {
+    text-decoration: none;
+}
+
 .social-media {
     display: flex;
     align-items: center;
@@ -1149,13 +1153,13 @@ blockquote footer {
         text-align: right;
         font-size: 12px;
         margin-top: 10px;
-        padding: 5px 0;
-        padding-right: 10px;
+        padding: 8px 0;
+        padding-right: 20px;
     }
 
     .two-column {
         flex-direction: column;
-        padding: 10px 10px;
+        padding: 10px 15px;
         margin-top: 30px;
         padding-bottom: 30px;
     }
@@ -1180,10 +1184,11 @@ blockquote footer {
 
     .parent-nav {
         margin-bottom: 8px;
+        font-size: 16px;
     }
 
     .sous-options a {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .nav-list {
@@ -1207,7 +1212,7 @@ blockquote footer {
     }
 
     .right-column.a_propos-style p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .right-column.a_propos-style img {
