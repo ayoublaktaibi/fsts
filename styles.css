@@ -671,6 +671,10 @@ blockquote footer {
     font-weight: bold;
 }
 
+.sous-options a:visited {
+    text-decoration: none;
+}
+
 .news {
     margin-top: 40px;
     text-align: center;
@@ -1090,7 +1094,7 @@ blockquote footer {
     }
     
     .fst-logo {
-        max-width: 100px; 
+        max-width: 110px; 
         float: left;
         margin-right: 3px;
         margin-top: 5px;
@@ -1184,11 +1188,12 @@ blockquote footer {
     }
 
     .parent-nav {
-        margin-bottom: 8px;
+        margin-bottom: 10px;
         font-size: 16px;
     }
 
     .sous-options a {
+        margin-bottom: 5px;
         font-size: 16px;
     }
 
