@@ -1197,6 +1197,12 @@ blockquote footer {
         font-size: 16px;
     }
 
+    .sous-options a:first-child {
+        margin-top: 8px;
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    
     .nav-list {
         margin-left: 30px;
         padding-left: 20px;
