@@ -1196,12 +1196,15 @@ blockquote footer {
         margin-bottom: 5px;
         font-size: 16px;
     }
+
+    .sous-options a {
+        margin-top: 8px;
+    }
     
     .nav-list {
         margin-left: 30px;
         padding-left: 20px;
         font-size: 16px;
-        margin-bottom: 20px;
     }
 
     .news h3 {
