@@ -1197,7 +1197,7 @@ blockquote footer {
         font-size: 16px;
     }
 
-    .sous-options a {
+    .sous-options a:first-child {
         margin-top: 8px;
     }
     
