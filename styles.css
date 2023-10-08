@@ -942,6 +942,7 @@ blockquote footer {
         font-size: 21px;
         margin-bottom: 12px;
         margin-top: 0;
+        line-height: 1.5;
     }
 
     .announcement-img {
@@ -1215,6 +1216,7 @@ blockquote footer {
     .news p {
         padding: 8px 12px;
         font-size: 18px;
+        line-height: 1.5;
     }
 
     .right-column.a_propos-style p:nth-of-type(1) {
