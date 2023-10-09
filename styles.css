@@ -384,6 +384,7 @@ nav a {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 25px;
+    color: #031d36;
 }
 
 .dean-photo-link {
@@ -412,18 +413,35 @@ nav a {
     margin-bottom: 10px;
 }
 
-blockquote {
-    font-style: italic;
-    border-left: 3px solid #04437c;
-    padding-left: 15px;
-    margin: 20px 0;
-    font-size: 18px;
+.testimony-section h2 {
+    color: #eda60a; /* rappel de votre couleur principale */
+    border-bottom: 2px solid #04437c;
+    display: block;
+    padding-bottom: 22px;
 }
 
-blockquote footer {
+.testimony-section i {
+    display: block;
+    font-size: 20px;
+    color: #04437c;
+    margin-top: 20px;
+}
+
+.testimony-section blockquote {
+    font-style: italic; /* incliner le texte pour évoquer un style manuscrit */
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 0 15px 15px 15px;
+    margin: 10px 0;
+}
+
+.testimony-section blockquote footer {
     text-align: right;
-    margin-top: 25px;
+    display: block;
+    margin-top: 30px;
     font-size: 16px;
+    font-weight: bold;
+    color: #666;
 }
 
 .stats-section {
@@ -1049,16 +1067,12 @@ blockquote footer {
         margin-bottom: 7px;
     }
     
-    blockquote {
-        font-style: italic;
-        border-left: 2.5px solid #04437c;
-        padding-left: 15px;
-        margin: 10px 0;
+    .testimony-section blockquote {
         font-size: 16px;
     }
     
-    blockquote footer {
-        opacity: 0.8;
+    .testimony-section blockquote footer {
+        margin-top: 30px;
         font-size: 15px;
     }
     
