@@ -625,54 +625,42 @@ blockquote footer {
     padding-bottom: 10px;
 }
 
-.parent-nav {
-    display: block;
-    font-size: larger;
-    color: #04437c;
-    margin-bottom: 10px;
-    text-decoration: none;
-    margin-left: 5px;
-}
-
-.parent-nav:hover {
-    text-decoration: underline;
-}
-
-.sous-options a {
+.nav-list .sous-options a {
     display: inline-block;
     color: #04437c;
     margin: 3px 0;
-    text-decoration: none;
     margin-left: 5px;
     font-size: 16px;
 }
 
-.sous-options a:hover {
+.nav-list a {
+    text-decoration: none;
+}
+
+.nav-list a:hover {
     text-decoration: underline;
 }
 
 .nav-list {
-    list-style-type: circle;
     padding-left: 40px;
     color: #04437c;
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 .nav-list li {
+    list-style-type: circle;
     margin-bottom: 8px;
     transition: 0.4s;
+    text-decoration: none;
+}
+
+.nav-list li.active {
+    list-style-type: disc;
+    font-weight: bold;
 }
 
 .nav-list li:hover {
     transform: translateX(10px);
-}
-
-.nav-list .active {
-    font-weight: bold;
-}
-
-.sous-options a:visited {
-    text-decoration: none;
 }
 
 .news {
@@ -731,8 +719,8 @@ blockquote footer {
 }
 
 .right-column.a_propos-style img {
-    max-width: 100%;
-    height: 380px;
+    width: 100%;
+    height: auto;
     display: block;
     margin-bottom: 50px;
     margin-top: 30px;
@@ -796,6 +784,20 @@ blockquote footer {
 
 .right-column.annonce-style .sansunderline-red {
     color: red;
+}
+
+.right-column.mot_doyen-style img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.right-column.mot_doyen-style p {
+    text-align: left;
+    line-height: 1.7;
+    font-size: 16px;
 }
 
 @media (max-width: 400px) {
@@ -1234,24 +1236,19 @@ blockquote footer {
         margin: 40px 20px 20px 20px;
     }
 
-    .parent-nav {
-        margin-bottom: 20x;
-        font-size: 16px;
-    }
-
-    .sous-options a {
+    .nav-list .sous-options a {
         margin-bottom: 5px;
         font-size: 16px;
-    }
-
-    .sous-options a:first-child {
-        margin-top: 8px;
     }
     
     .nav-list {
         margin-left: 30px;
         padding-left: 20px;
         font-size: 16px;
+    }
+    
+    .nav-list li {
+        margin-bottom: 7px;
     }
 
     .news h3 {
@@ -1272,11 +1269,11 @@ blockquote footer {
 
     .right-column.a_propos-style p {
         font-size: 15px;
-        margin-top: 20px
+        margin-top: 20px;
     }
 
     .right-column.a_propos-style img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
         margin-bottom: 30px;
     }
@@ -1315,5 +1312,15 @@ blockquote footer {
     }
     .right-column.annonce-style p {
         word-wrap: break-word;
+    }
+
+    .right-column.mot_doyen-style img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .right-column.mot_doyen-style p {
+        font-size: 15px;
     }
 }
