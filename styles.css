@@ -751,6 +751,52 @@ blockquote footer {
     line-height: 1.4;
 }
 
+.right-column.annonce-style {
+    font-weight: bold; /* Tous les textes en gras */
+    font-size: 17px; /* Taille uniforme pour tout le texte */
+    line-height: 1.5;
+    color: #031d36;
+}
+
+.right-column.annonce-style .annonce-img {
+    float: left; /* Image à gauche */
+    margin-right: 20px; /* Espace entre l'image et le titre */
+    width: 200px; /* Taille raisonnable pour l'image */
+    height: auto;
+    margin-top: 0;
+}
+
+.right-column.annonce-style .annonce-titre {
+    font-size: 26px; /* Taille moyenne pour le titre */
+    line-height: 1.6;
+    font-weight: 500;
+    margin-top: 0;
+    color: #000;
+}
+
+.right-column.annonce-style .imgtitre {
+    display: flex;
+    padding: 20px;
+    background: #eee;
+    margin-bottom: 30px;
+}
+
+.right-column.annonce-style .annonce-plist li {
+    list-style-type: disc; /* Pour des points pleins */
+}
+
+.right-column.annonce-style .highlighted-blue {
+    color: blue;
+}
+
+.right-column.annonce-style .highlighted-red {
+    color: red;
+    text-decoration: underline; /* Seulement pour "NB: Après 12h15...." */
+}
+
+.right-column.annonce-style .sansunderline-red {
+    color: red;
+}
 
 @media (max-width: 400px) {
     /* Ajustements pour le header */
@@ -1239,5 +1285,35 @@ blockquote footer {
         font-size: 15px;
         margin-top: 40px;
         padding-left: 30px;
+    }
+
+    .right-column.annonce-style {
+        font-size: 16px;
+    }
+    
+    .right-column.annonce-style .annonce-img {
+        float: none; /* Image à gauche */
+        margin: 0; /* Espace entre l'image et le titre */
+        width: 100%; /* Taille raisonnable pour l'image */
+        height: auto;
+        order: 2;
+    }
+    
+    .right-column.annonce-style .annonce-titre {
+        font-size: 22px;
+        line-height: 1.5;
+        font-weight: 500;
+        margin-top: 20px;
+        order: 1;
+    }
+    
+    .right-column.annonce-style .imgtitre {
+        flex-direction: column;
+        padding: 0;
+        background: none;
+        margin-bottom: 30px;
+    }
+    .right-column.annonce-style p {
+        word-wrap: break-word;
     }
 }
