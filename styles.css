@@ -128,7 +128,7 @@ nav a {
 
 .search-container .search-button {
     align-items: center;
-    background: #eda60a;;
+    background: #e3980c;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -254,7 +254,7 @@ nav a {
 }
 
 .thesis-button {
-    background-color: #eda60a;
+    background-color: #e3980c;
     color: white;
     transition: 0.4s;
 }
@@ -269,7 +269,7 @@ nav a {
 }
 
 .announcement-text {
-    color: #eda60a;
+    color: #e3980c;
     font-family: Arial, sans-serif;
     font-size: 24px;
     margin-top: 50px;
@@ -382,7 +382,7 @@ nav a {
 
 .dean-section h2 {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 25px;
     color: #031d36;
 }
@@ -397,13 +397,6 @@ nav a {
     opacity: 0.8;
 }
 
-.testimony-section h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    color: #eda60a;
-}
-
 .dean-section p, .testimony-section blockquote {
     line-height: 1.6;
 }
@@ -414,10 +407,12 @@ nav a {
 }
 
 .testimony-section h2 {
-    color: #eda60a; /* rappel de votre couleur principale */
+    color: #e3980c; /* rappel de votre couleur principale */
     border-bottom: 2px solid #04437c;
     display: block;
     padding-bottom: 22px;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .testimony-section i {
@@ -453,8 +448,9 @@ nav a {
 
 .stats-title {
     font-size: 26px;
-    color: #eda60a;
+    color: #e3980c;
     margin-bottom: 5px;
+    font-weight: 500;
 }
 
 .stats-description {
@@ -638,7 +634,7 @@ nav a {
 
 .left-column h2 {
     font-size: 24px;
-    color: #eda60a;
+    color: #e3980c;
     border-bottom: 2px solid #04437c;
     padding-bottom: 10px;
 }
@@ -745,7 +741,7 @@ nav a {
 }
 
 .right-column.a_propos-style .circle-list {
-    color: #eda60a;
+    color: #e3980c;
     list-style-type: circle;
     margin-top: 70px;
     padding-left: 50px;
@@ -1046,11 +1042,13 @@ nav a {
     }
     
     .dean-section h2 {
+        font-weight: bold;
         font-size: 22px;
         margin-bottom: 18px;
     }
     
     .testimony-section h2 {
+        font-weight: bold;
         font-size: 22px;
         margin-bottom: 15px;
     }
