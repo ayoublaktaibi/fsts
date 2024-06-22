@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Arial, Helvetica, sans-serif
 }
 
 body {
@@ -20,7 +20,7 @@ body {
     top: 20px;
     right: 20px;
     text-decoration: none;
-    color: #04437c; /* Assure que la couleur du lien est la même que celle du texte h5 */
+    color: #04437c;
 }
 
 .top-right-text h5 {
@@ -28,7 +28,7 @@ body {
     border-radius: 10px;
     margin: 0;
     padding: 8px;
-    transition: 0.5s; /* Ajout d'une transition pour un effet plus fluide */
+    transition: 0.5s;
 }
 
 .top-right-text:hover h5 {
@@ -72,19 +72,16 @@ body {
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
     border: none;
     outline: none;
-    border-radius: 20px;
+    border-radius: 15px;
     font-size: 14px;
     color: #04437c;
-    padding: 20px 45px 20px 20px;
-}
-
-.input-box input:focus {
-    border: 1px solid #04427cb1;
+    padding: 20px 45px 20px 18px;
 }
 
 .input-box input::placeholder {
     color: #04437c;
     transition: 0.5s;
+    opacity: 0.8;
 }
 
 .input-box input:focus::placeholder {
@@ -94,17 +91,18 @@ body {
 
 .input-box i {
     position: absolute;
-    right: 20px;
+    right: 17px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 18px;
+    opacity: 0.8;
 }
 
 .wrapper .remember-forgot {
     display: flex;
     justify-content: space-between;
-    font-size: 13px;
-    margin: -10px 0 15px;
+    font-size: 11px;
+    margin: 15px 0 15px;
     opacity: 0.7;
 }
 
@@ -132,35 +130,48 @@ body {
 .wrapper .botton {
     width: 100%;
     height: 40px;
-    background: #eda60a;;
+    background-image: linear-gradient(144deg, #eda60a, #df9b08 50%, #ffc629);
     border: none;
     outline: none;
-    box-shadow: 0 0 5px solid rgba(0, 0, 0, .3);
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
     border-radius: 30px;
     cursor: pointer;
     font-size: 16px;
     color: #fff;
     font-weight: 600;
     transition: 0.5s;
+    user-select: none;
+    touch-action: manipulation;
+    position: relative;
+    overflow: hidden;
 }
 
-.wrapper .botton:hover {
-    transform: scale(0.96);
+.wrapper .botton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -110%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-45deg);
+    transition: left 0.5s ease-out;
 }
 
-.wrapper .botton:focus {
-    background: #04437c;
+.wrapper .botton:hover::before {
+    left: 110%;
 }
 
 .wrapper .signal {
     text-align: center;
-    margin: 20px 0 15px;
-    font-size: 13px;
+    margin: 15px 0 15px;
+    font-size: 11px;
     opacity: 0.7;
 }
 
 .signal p a {
     color: #04437c;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -168,11 +179,9 @@ body {
     text-decoration: underline;
 }
 
-
-/* Styles pour les écrans de téléphone mobile */
 @media only screen and (max-width: 1024px) {
     .wrapper {
-        width: 90%; /* Augmenter la largeur pour les mobiles */
+        width: 90%;
         padding: 20px;
     }
 
@@ -182,28 +191,20 @@ body {
     }
 
     .input-box {
-        margin: 15px 0; /* Réduire la marge */
+        margin: 15px 0;
     }
 
     .input-box input {
-        font-size: 15px; /* Réduire la taille de la police */
-        padding: 15px 35px 15px 15px; /* Réduire le padding */
+        font-size: 15px;
+        padding: 15px 35px 15px 15px;
     }
 
     .input-box i {
-        font-size: 16px; /* Réduire la taille de l'icône */
-    }
-
-    .remember-forgot {
-        font-size: 13px; /* Réduire la taille de la police */
+        font-size: 16px;
     }
 
     .botton {
-        height: 40px; /* Réduire la hauteur du bouton */
-        font-size: 14px; /* Réduire la taille de la police */
-    }
-
-    .signal {
-        font-size: 13px; /* Réduire la taille de la police */
+        height: 40px;
+        font-size: 14px;
     }
 }
