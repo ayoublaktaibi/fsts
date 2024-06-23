@@ -155,7 +155,7 @@ body {
 
 
 .wrapper .botton:hover {
-    background-image: linear-gradient(144deg, #04437c, #073a6a 50%, #1671c6);
+    background-image: linear-gradient(144deg, #04437c, #084985 50%, #1671c6);
 }
 
 .wrapper .signal {
@@ -184,10 +184,6 @@ body {
     .wrapper h1 {
         font-size: 25px;
         font-weight: 400;
-    }
-
-    .input-box {
-        margin: 15px 0;
     }
 
     .input-box input {
