@@ -280,15 +280,13 @@ nav a {
 }
 
 .announcements-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: columns;
     gap: 20px;
     background: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: 1200px;
     margin: 30px auto;
     padding: 20px;
-    align-items: start; /* Alignement en haut des annonces */
 }
 
 .announcement {
